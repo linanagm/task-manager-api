@@ -1,6 +1,6 @@
 import  userModel  from "./user.model.js";
 import  taskModel  from "./task.model.js";
-import { sequelize } from "../DB/db.connection.js";
+import { sequelize } from "../db.connection.js";
 
 // 💡 Define relationships
 userModel.hasMany(taskModel, { foreignKey: "userId" });
