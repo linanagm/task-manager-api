@@ -26,7 +26,7 @@ export const connectDb = async () => {
 
 export const syncTables = async() => {
     try {
-        await sequelize.sync( { force: true } , { alter: true } );
+        await sequelize.sync( { force: true });
         console.log("Tables have been synced successfully.");
     } catch (error) {
         console.error("Error syncing tables:", error);
